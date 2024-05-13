@@ -1,5 +1,5 @@
 {% set name = "homeharvest" %}
-{% set version = "0.3.23" %}
+{% set version = "0.3.24" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/homeharvest-{{ version }}.tar.gz
-  sha256: 148f34979a269ed1768c67a51b8406bdc870a7b8f1c6739cf90145d707bb34b6
+  sha256: 16ae54244701108c8be136bf8cb9718ff881797cb2559da682b95fa464b16001
 
 build:
   entry_points:
