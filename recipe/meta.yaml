@@ -1,13 +1,13 @@
 {% set name = "homeharvest" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/homeharvest-{{ version }}.tar.gz
-  sha256: 4095a5d4f866a491e0ac82f81b6202056901ce29306c8874b5bcfb56a112e96e
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/homeharvest-{{ version }}.tar.gz
+  sha256: d4feaf8c448eb371dfdf8b9c2c81cd3fb20c9a97aa4125162577f5b5c96f9649
 
 build:
   entry_points:
@@ -26,6 +26,7 @@ requirements:
     - requests >=2.31.0,<3.0.0
     - pandas >=2.1.1,<3.0.0
     - pydantic >=2.7.4,<3.0.0
+    - tenacity >=9.0.0,<10.0.0
 
 test:
   imports:
