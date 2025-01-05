@@ -14,15 +14,15 @@ build:
     - homeharvest = homeharvest.cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9,<3.13
+    - python {{ python_min }}
     - poetry-core
     - pip
   run:
-    - python >=3.9,<3.13
+    - python >={{ python_min }},<3.13
     - requests >=2.31.0,<3.0.0
     - pandas >=2.1.1,<3.0.0
     - pydantic >=2.7.4,<3.0.0
@@ -36,6 +36,7 @@ test:
     - homeharvest --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Bunsly/HomeHarvest
