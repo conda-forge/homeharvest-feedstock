@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: homeharvest
-  version: "0.5.0"
+  version: "0.5.1"
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/homeharvest-${{ version }}.tar.gz
-  sha256: b2f4ffa3846a55c21ba1921937f5e236c656e27ef7a1548bf0c7d013aaa00eab
+  sha256: 4fa01602145a6b8ba1100581a185d582aa58563a78f003289123f64df7d4c486
 
 build:
   number: 0
