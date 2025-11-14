@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: homeharvest
   version: "0.7.3"
-  python_min: '3.10'
 
 package:
   name: ${{ name|lower }}
